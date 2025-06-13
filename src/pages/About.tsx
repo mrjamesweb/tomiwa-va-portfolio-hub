@@ -181,7 +181,7 @@ export const About = () => {
             <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
               <Link to="/contact">Get In Touch</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900">
+            <Button asChild variant="outline" size="lg" className="border-pink-500 text-pink-500 hover:bg-pink-50 hover:text-pink-600">
               <Link to="/portfolio">View My Work</Link>
             </Button>
           </div>

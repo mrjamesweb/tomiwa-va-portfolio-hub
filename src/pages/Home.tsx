@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Star, CheckCircle, Calendar, Mail, Database, Users } from "lucide-react";
@@ -28,7 +27,7 @@ export const Home = () => {
                     Get Started <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900">
+                <Button asChild variant="outline" size="lg" className="border-pink-500 text-pink-500 hover:bg-pink-50 hover:text-pink-600">
                   <Link to="/services">View Services</Link>
                 </Button>
               </div>

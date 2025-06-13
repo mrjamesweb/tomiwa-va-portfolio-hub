@@ -300,7 +300,7 @@ export const Contact = () => {
                 Start a Project
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900">
+            <Button asChild variant="outline" size="lg" className="border-pink-500 text-pink-500 hover:bg-pink-50 hover:text-pink-600">
               <a href="mailto:oyedeleoluwatomiwac@gmail.com">
                 Schedule a Call
               </a>
