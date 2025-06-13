@@ -189,7 +189,7 @@ export const Services = () => {
                 Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900">
+            <Button asChild variant="outline" size="lg" className="border-pink-500 text-pink-500 hover:bg-pink-50 hover:text-pink-600">
               <Link to="/portfolio">View My Portfolio</Link>
             </Button>
           </div>
