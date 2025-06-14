@@ -1,5 +1,4 @@
-
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -24,22 +23,6 @@ export const Footer = () => {
                 className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
-              >
-                <Github className="h-5 w-5" />
               </a>
             </div>
           </div>
