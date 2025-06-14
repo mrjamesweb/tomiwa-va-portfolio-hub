@@ -1,5 +1,5 @@
 
-import { Calendar, FileText, BarChart, Mail, Users } from "lucide-react";
+import { Calendar, FileText, BarChart, Mail, Users, ClipboardList, Database } from "lucide-react";
 
 export const projects = [
   {
@@ -15,6 +15,39 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Team Meeting Agenda - Professional Documentation",
+    description: "Comprehensive meeting agenda template showcasing professional document creation, structured planning, and team coordination capabilities for corporate environments.",
+    image: "/lovable-uploads/942cae0a-4af3-4d32-a2f2-f31dd1cf6648.png",
+    link: "https://docs.google.com/document/d/1-yeFnx07x5FPvGDKd870pE9CXWAbu2B9Y1971qAPX90/edit?tab=t.0",
+    category: "Document Management",
+    tools: ["Google Docs", "Meeting Planning", "Team Coordination"],
+    status: "Completed",
+    icon: ClipboardList
+  },
+  {
+    id: 3,
+    title: "Research on Parks and Cities in California",
+    description: "Detailed research analysis and data compilation on California's parks and cities, demonstrating research skills, data organization, and analytical capabilities for location-based projects.",
+    image: "/lovable-uploads/8e150a21-ba98-4be6-9c39-70c761d6697f.png",
+    link: "https://docs.google.com/spreadsheets/d/140m9iirDXmO9dmHZSchtDf5nrdhDB8W3AzghFiZeBEU/edit?gid=0#gid=0",
+    category: "Research & Analysis",
+    tools: ["Google Sheets", "Data Analysis", "Research Skills"],
+    status: "Completed",
+    icon: BarChart
+  },
+  {
+    id: 4,
+    title: "VA Program - Skills Tracker",
+    description: "Comprehensive skills assessment and tracking system developed for Virtual Assistant program, showcasing self-evaluation capabilities, progress monitoring, and professional development planning.",
+    image: "/lovable-uploads/a61525e6-2599-406b-a5ac-54d20bef236f.png",
+    link: "https://docs.google.com/spreadsheets/d/13I9EB-4gLuIeD5-oKCEVtz0JdcajZURzkzf4hJG18MQ/edit?gid=1499130837#gid=1499130837",
+    category: "Skills Assessment",
+    tools: ["Google Sheets", "Skills Tracking", "Professional Development"],
+    status: "Completed",
+    icon: Database
+  },
+  {
+    id: 5,
     title: "Customer Database Management System",
     description: "Developed and maintained a comprehensive customer database for a local business, including contact information, purchase history, and communication logs. Improved client retention by 30%.",
     category: "Data Management",
@@ -23,7 +56,7 @@ export const projects = [
     icon: FileText
   },
   {
-    id: 3,
+    id: 6,
     title: "Social Media Content Calendar",
     description: "Created and managed a 3-month social media content calendar for a healthcare organization, including post scheduling, engagement tracking, and performance analytics.",
     category: "Social Media Management",
@@ -32,7 +65,7 @@ export const projects = [
     icon: BarChart
   },
   {
-    id: 4,
+    id: 7,
     title: "Email Marketing Campaign Management",
     description: "Designed and executed email marketing campaigns for a nonprofit organization, achieving a 25% increase in engagement rates through strategic content planning and audience segmentation.",
     category: "Email Marketing",
@@ -41,7 +74,7 @@ export const projects = [
     icon: Mail
   },
   {
-    id: 5,
+    id: 8,
     title: "Event Coordination & Administrative Support",
     description: "Provided comprehensive administrative support for a medical conference, including attendee registration, vendor coordination, and logistics management for 200+ participants.",
     category: "Event Management",

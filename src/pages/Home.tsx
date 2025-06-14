@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Star, CheckCircle, Calendar, Mail, Database, Users } from "lucide-react";
@@ -7,53 +8,54 @@ export const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 sm:py-16 md:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-purple-600/10 animate-gradient-shift"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-6 md:space-y-8 text-center lg:text-left">
+            <div className="space-y-6 md:space-y-8 text-center lg:text-left animate-fade-in">
               <div className="space-y-4">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-playfair">
                   Your Reliable
-                  <span className="text-pink-400 block">Virtual Assistant</span>
+                  <span className="text-pink-400 block animate-pulse-glow">Virtual Assistant</span>
                 </h1>
-                <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-inter">
                   I'm Oluwatomiwa Oyedele, a certified Virtual Assistant ready to streamline your business operations and boost your productivity.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
+                <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-600 text-white transform hover:scale-105 transition-all duration-300">
                   <Link to="/contact">
                     Get Started <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-pink-500 text-pink-500 hover:bg-pink-50 hover:text-pink-600">
+                <Button asChild variant="outline" size="lg" className="border-pink-500 text-pink-500 hover:bg-pink-50 hover:text-pink-600 transform hover:scale-105 transition-all duration-300">
                   <Link to="/services">View Services</Link>
                 </Button>
               </div>
 
-              <div className="flex items-center gap-6 pt-4 justify-center lg:justify-start">
+              <div className="flex items-center gap-6 pt-4 justify-center lg:justify-start animate-bounce-gentle">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <span className="text-gray-300 text-sm sm:text-base">Certified ALX Graduate</span>
+                <span className="text-gray-300 text-sm sm:text-base font-inter">Certified ALX Graduate</span>
               </div>
             </div>
 
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-full p-1">
+            <div className="relative flex justify-center lg:justify-end animate-slide-in-right">
+              <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-full p-1 animate-pulse-glow">
                 <img
                   src="/lovable-uploads/d1a1e302-6dff-4c61-916d-7e8be1d6e9ef.png"
                   alt="Oluwatomiwa Oyedele"
                   className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover object-top bg-white"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-white text-slate-900 p-3 md:p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-4 -right-4 bg-white text-slate-900 p-3 md:p-4 rounded-lg shadow-lg animate-bounce-gentle">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="font-semibold text-sm md:text-base">Available Now</span>
+                  <span className="font-semibold text-sm md:text-base font-inter">Available Now</span>
                 </div>
               </div>
             </div>
@@ -62,13 +64,13 @@ export const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-12 sm:py-16 bg-gray-50">
+      <section className="py-12 sm:py-16 bg-gradient-to-br from-gray-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 font-playfair">
               Administrative Services I Offer
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base font-inter">
               From email management to project coordination, I provide comprehensive virtual assistance to help your business thrive.
             </p>
           </div>
@@ -96,20 +98,20 @@ export const Home = () => {
                 description: "Professional customer service and client communication management."
               }
             ].map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 animate-fade-in-up group" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardContent className="p-4 md:p-6 text-center">
-                  <service.icon className="h-10 w-10 md:h-12 md:w-12 text-pink-500 mx-auto mb-4" />
-                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-2">
+                  <service.icon className="h-10 w-10 md:h-12 md:w-12 text-pink-500 mx-auto mb-4 group-hover:animate-bounce-gentle" />
+                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-2 font-playfair">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-sm md:text-base">{service.description}</p>
+                  <p className="text-gray-600 text-sm md:text-base font-inter">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="text-center mt-8 md:mt-12">
-            <Button asChild size="lg">
+          <div className="text-center mt-8 md:mt-12 animate-fade-in">
+            <Button asChild size="lg" className="transform hover:scale-105 transition-all duration-300">
               <Link to="/services">
                 View All Services <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -119,11 +121,11 @@ export const Home = () => {
       </section>
 
       {/* Why Choose Me */}
-      <section className="py-12 sm:py-16">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">
+            <div className="animate-fade-in">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-6 font-playfair">
                 Why Choose Me as Your Virtual Assistant?
               </h2>
               <div className="space-y-4">
@@ -135,23 +137,23 @@ export const Home = () => {
                   "Proactive approach to project management",
                   "Dedicated to helping clients achieve their goals"
                 ].map((point, index) => (
-                  <div key={index} className="flex items-start gap-3">
+                  <div key={index} className="flex items-start gap-3 animate-slide-in-right" style={{animationDelay: `${index * 0.1}s`}}>
                     <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700 text-sm md:text-base">{point}</span>
+                    <span className="text-gray-700 text-sm md:text-base font-inter">{point}</span>
                   </div>
                 ))}
               </div>
-              <Button asChild className="mt-6 md:mt-8" size="lg">
+              <Button asChild className="mt-6 md:mt-8 transform hover:scale-105 transition-all duration-300" size="lg">
                 <Link to="/about">Learn More About Me</Link>
               </Button>
             </div>
-            <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-6 md:p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-6 md:p-8 rounded-2xl animate-fade-in-up transform hover:scale-105 transition-all duration-300">
               <div className="text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">Ready to Get Started?</h3>
-                <p className="text-gray-600 mb-6 text-sm md:text-base">
+                <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 font-playfair">Ready to Get Started?</h3>
+                <p className="text-gray-600 mb-6 text-sm md:text-base font-inter">
                   Let's discuss how I can help streamline your business operations and increase your productivity.
                 </p>
-                <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
+                <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-600 text-white transform hover:scale-105 transition-all duration-300">
                   <Link to="/contact">Contact Me Today</Link>
                 </Button>
               </div>
