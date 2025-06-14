@@ -1,7 +1,6 @@
 
 import { PortfolioHeader } from "@/components/portfolio/PortfolioHeader";
 import { FeaturedProject } from "@/components/portfolio/FeaturedProject";
-import { ProjectGrid } from "@/components/portfolio/ProjectGrid";
 import { CertificationGrid } from "@/components/portfolio/CertificationGrid";
 import { SkillsSummary } from "@/components/portfolio/SkillsSummary";
 import { projects, certifications } from "@/data/portfolioData";
@@ -13,12 +12,19 @@ export const Portfolio = () => {
         <div className="animate-fade-in">
           <PortfolioHeader />
         </div>
-        <div className="animate-fade-in-up">
-          <FeaturedProject project={projects[0]} />
+        
+        {/* Featured Projects Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8 font-playfair">Featured Projects</h2>
+          <div className="grid gap-8">
+            {projects.map((project, index) => (
+              <div key={project.id} className={`animate-fade-in-up`} style={{ animationDelay: `${index * 200}ms` }}>
+                <FeaturedProject project={project} />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="animate-slide-in-right">
-          <ProjectGrid projects={projects.slice(1)} />
-        </div>
+        
         <div className="animate-fade-in">
           <CertificationGrid certifications={certifications} />
         </div>

@@ -23,15 +23,14 @@ export const FeaturedProject = ({ project }: FeaturedProjectProps) => {
   const IconComponent = project.icon;
 
   return (
-    <div className="mb-16">
-      <h2 className="text-2xl font-bold text-slate-900 mb-8">Featured Project</h2>
-      <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className="mb-8">
+      <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
         <div className="grid lg:grid-cols-2 gap-0">
           <div className="aspect-video lg:aspect-auto">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="p-8 flex flex-col justify-center">
@@ -41,21 +40,21 @@ export const FeaturedProject = ({ project }: FeaturedProjectProps) => {
                 {project.category}
               </span>
             </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4 font-playfair">
               {project.title}
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 leading-relaxed">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tools.map((tool, index) => (
-                <span key={index} className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
+                <span key={index} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full hover:bg-pink-50 hover:text-pink-700 transition-colors duration-200">
                   {tool}
                 </span>
               ))}
             </div>
             {project.link && (
-              <Button asChild className="w-fit">
+              <Button asChild className="w-fit bg-pink-500 hover:bg-pink-600 text-white">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   View Project <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
